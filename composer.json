@@ -27,6 +27,10 @@
             "@php -r \"copy('public/plugins/toast/', '../../public/plugins/toast');\"",
             "@php -r \"copy('public/js/toast.adapters.js', '../../public/js/toast.adapters.js');\""
         ],
+        "post-root-package-update": [
+            "@php -r \"copy('public/plugins/toast/', '../../public/plugins/toast');\"",
+            "@php -r \"copy('public/js/toast.adapters.js', '../../public/js/toast.adapters.js');\""
+        ],
         "post-create-project-cmd": [
 
         ],
