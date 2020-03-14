@@ -239,7 +239,7 @@
 ------------
 ------------
 ------------
-> Segundo pacote é o ResponseView, Segue instruções de Uso.
+> [*] Segundo pacote é o ResponseView, Segue instruções de Uso.
 
 > Início de instrução de uso do ResponseView ------------------------------------
 
