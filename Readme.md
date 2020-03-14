@@ -197,12 +197,22 @@
         ->withInput()
         ->throwResponse();
         
-### Tratamento na View:
+### Publicando arquivos de js e css em app/Providers/AppServiceProvider.php dentro do Método Boot adicione este trecho de código e depois rode o comando [php artisan vendor:publish --tag=feedback --force]:
+
+     /**
+       * Publish files js and css in folder public
+       */
+       $this->publishes([
+            base_path().DIRECTORY_SEPARATOR."vendor".DIRECTORY_SEPARATOR."shieldforce".DIRECTORY_SEPARATOR."life-packagist-laravel".DIRECTORY_SEPARATOR."public".DIRECTORY_SEPARATOR.""
+            => public_path(DIRECTORY_SEPARATOR."vendor".DIRECTORY_SEPARATOR."shieldforce".DIRECTORY_SEPARATOR."life-packagist-laravel".DIRECTORY_SEPARATOR."public".DIRECTORY_SEPARATOR.""),
+        ], 'feedback');
+        
+### Tratamento na View - Adicione este trecho de código em algum lugar do seu código (Lembrando que é preciso ter as libs jquery e bootstrap para que funcione perfeitamente):
 
     {{-- Include Toast CSS and JS --}}
-    <link rel="stylesheet" href="{{ asset('build/plugins/toast/toast.css') }}">
-    <script src="{{ asset( 'build/plugins/toast/toast.js' ) }}" ></script>
-    <script src="{{ asset( 'js/funcoesgerais/toast.adapters.js' ) }}" ></script>
+    <link rel="stylesheet" href="/vendor/shieldforce/life-packagist-laravel/public/plugins/toast/toast.css">
+    <script src="/vendor/shieldforce/life-packagist-laravel/public/plugins/toast/toast.js"></script>
+    <script src="/vendor/shieldforce/life-packagist-laravel/public/js/toast.adapters.js"></script>
     
     @if (count($errors) > 0)
     	<script>
