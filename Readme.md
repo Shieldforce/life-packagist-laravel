@@ -9,7 +9,7 @@
 ------------
 ------------
 ------------
-> Primeiro pacote é o AutoValidation, Segue instruções de Uso.
+> #Primeiro pacote é o AutoValidation, Segue instruções de Uso.
 
 > Início de instrução de uso do AutoValidation ------------------------
 
@@ -239,7 +239,7 @@
 ------------
 ------------
 ------------
-> [*] Segundo pacote é o ResponseView, Segue instruções de Uso.
+> #Segundo pacote é o ResponseView, Segue instruções de Uso.
 
 > Início de instrução de uso do ResponseView ------------------------------------
 
