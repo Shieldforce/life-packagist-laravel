@@ -1,14 +1,17 @@
 # Equipe de DEVs Life - Pacote de Funcionalidades
 
-### Instalação - Passo a Passo
+## Instalação - Passo a Passo
 
 - Instalar o Git (Link no rodapé).
 - Instalar o Composer (Link no rodapé).
 - Rodar o comando: "composer require shieldforce/life-packagist-laravel dev-master"
 - Link do pacote: https://packagist.org/packages/shieldforce/life-packagist-laravel
+------------
+------------
+------------
+> Primeiro pacote é o AutoValidation, Segue instruções de Uso.
 
-### Primeiro pacote é o AutoValidation, Segue instruções de Uso
-### ===Início de instrução de uso do AutoValidation===
+> Início de instrução de uso do AutoValidation ------------------------
 
 ### Exemplo de Uso no Model, com a Trait (Nesse caso a Trait Já contém o método boot() e o ObserverValidation) :
 
@@ -230,13 +233,17 @@
     	</script>
     @endif
         
-### ===Fim de instrução de uso do AutoValidation===
+> Fim de instrução de uso do AutoValidation --------------------------------------
 
 
-### Segundo pacote é o ResponseView, Segue instruções de Uso
-### ===Início de instrução de uso do ResponseView===
+------------
+------------
+------------
+> Segundo pacote é o ResponseView, Segue instruções de Uso.
 
-### Exemplo de Uso no Controller
+> Início de instrução de uso do ResponseView ------------------------------------
+
+Exemplo de Uso no Controller
 
     use ShieldforcePackage\ResponseView\ResponseView;
     
