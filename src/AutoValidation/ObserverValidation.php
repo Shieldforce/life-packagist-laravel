@@ -22,6 +22,7 @@ class ObserverValidation
                 return back()
                     ->with('error', 'Validação de Campos não passou!!')
                     ->withErrors($validator)
+                    ->withInput()
                     ->throwResponse();
             }
         }
@@ -38,6 +39,7 @@ class ObserverValidation
         {
             return back()
                 ->with('error', 'Item não pode ser atualizado!!')
+                ->withInput()
                 ->throwResponse();
         }
 
@@ -50,6 +52,7 @@ class ObserverValidation
                 return back()
                     ->with('error', 'Validação de Campos não passou!!')
                     ->withErrors($validator)
+                    ->withInput()
                     ->throwResponse();
             }
         }
@@ -71,6 +74,7 @@ class ObserverValidation
                 return back()
                     ->with('error', 'Validação de Campos não passou!!')
                     ->withErrors($validator)
+                    ->withInput()
                     ->throwResponse();
             }
         }
@@ -92,6 +96,7 @@ class ObserverValidation
                 return back()
                     ->with('error', 'Validação de Campos não passou!!')
                     ->withErrors($validator)
+                    ->withInput()
                     ->throwResponse();
             }
         }
@@ -113,6 +118,7 @@ class ObserverValidation
                 return back()
                     ->with('error', 'Validação de Campos não passou!!')
                     ->withErrors($validator)
+                    ->withInput()
                     ->throwResponse();
             }
         }
@@ -129,6 +135,7 @@ class ObserverValidation
         {
             return back()
                 ->with('error', 'Item não pode ser atualizado!!')
+                ->withInput()
                 ->throwResponse();
         }
 
@@ -141,6 +148,7 @@ class ObserverValidation
                 return back()
                     ->with('error', 'Validação de Campos não passou!!')
                     ->withErrors($validator)
+                    ->withInput()
                     ->throwResponse();
             }
         }
@@ -162,6 +170,7 @@ class ObserverValidation
                 return back()
                     ->with('error', 'Validação de Campos não passou!!')
                     ->withErrors($validator)
+                    ->withInput()
                     ->throwResponse();
             }
         }
@@ -178,6 +187,7 @@ class ObserverValidation
         {
             return back()
                 ->with('error', 'Item não pode ser deletado!!')
+                ->withInput()
                 ->throwResponse();
         }
 
@@ -190,6 +200,7 @@ class ObserverValidation
                 return back()
                     ->with('error', 'Validação de Campos não passou!!')
                     ->withErrors($validator)
+                    ->withInput()
                     ->throwResponse();
             }
         }
@@ -211,6 +222,7 @@ class ObserverValidation
                 return back()
                     ->with('error', 'Validação de Campos não passou!!')
                     ->withErrors($validator)
+                    ->withInput()
                     ->throwResponse();
             }
         }
@@ -227,6 +239,7 @@ class ObserverValidation
         {
             return back()
                 ->with('error', 'Item não pode ser restaurado!!')
+                ->withInput()
                 ->throwResponse();
         }
 
@@ -239,6 +252,7 @@ class ObserverValidation
                 return back()
                     ->with('error', 'Validação de Campos não passou!!')
                     ->withErrors($validator)
+                    ->withInput()
                     ->throwResponse();
             }
         }
@@ -260,6 +274,7 @@ class ObserverValidation
                 return back()
                     ->with('error', 'Validação de Campos não passou!!')
                     ->withErrors($validator)
+                    ->withInput()
                     ->throwResponse();
             }
         }
