@@ -1,6 +1,6 @@
 {
     "name": "shieldforce/sief-packagist-laravel",
-    "description": "Validacao automatica pelo Model",
+    "description": "Pacotes do Sief",
     "type": "library",
     "license": "MIT",
     "version": "1.0",
