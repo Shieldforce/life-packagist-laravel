@@ -1,0 +1,77 @@
+{
+    "name": "shieldforce/autovalidation-laravel",
+    "description": "Validacao automatica pelo Model",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Alexandre Ferreira do Nascimento",
+            "email": "shieldforce2@gmail.com",
+            "role": "creator"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "doctrine/inflector": "*",
+        "erusev/parsedown": "*",
+        "league/flysystem": "*",
+        "monolog/monolog": "*",
+        "nesbot/carbon": "*",
+        "psr/container": "*",
+        "psr/simple-cache": "*",
+        "ramsey/uuid": "*",
+        "swiftmailer/swiftmailer": "*",
+        "symfony/console": "*",
+        "symfony/debug": "*",
+        "symfony/finder": "*",
+        "symfony/http-foundation": "*",
+        "symfony/http-kernel": "*",
+        "symfony/process": "*",
+        "symfony/routing": "*",
+        "symfony/var-dumper": "*",
+        "tijsverkoyen/css-to-inline-styles": "*",
+        "vlucas/phpdotenv": "*",
+        "illuminate/auth": "*",
+        "illuminate/broadcasting": "*",
+        "illuminate/bus": "*",
+        "illuminate/cache": "*",
+        "illuminate/config": "*",
+        "illuminate/console": "*",
+        "illuminate/container": "*",
+        "illuminate/contracts": "*",
+        "illuminate/cookie": "*",
+        "illuminate/database": "*",
+        "illuminate/encryption": "*",
+        "illuminate/events": "*",
+        "illuminate/filesystem": "*",
+        "illuminate/hashing": "*",
+        "illuminate/http": "*",
+        "illuminate/log": "*",
+        "illuminate/mail": "*",
+        "illuminate/notifications": "*",
+        "illuminate/pagination": "*",
+        "illuminate/pipeline": "*",
+        "illuminate/queue": "*",
+        "illuminate/redis": "*",
+        "illuminate/routing": "*",
+        "illuminate/session": "*",
+        "illuminate/support": "*",
+        "illuminate/translation": "*",
+        "illuminate/validation": "*",
+        "illuminate/view": "*",
+        "tightenco/collect": "*"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers_1.php",
+            "src/helpers_2.php"
+        ],
+        "psr-4": {
+            "ShieldforcePackage\\AutoValidation\\": "src/AutoValidation/"
+        }
+    }
+}
