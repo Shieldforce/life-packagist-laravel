@@ -1,4 +1,4 @@
-# SIEF - Pacote de Funcionalidades
+# Equipe de DEVs Life - Pacote de Funcionalidades
 
 ### Instalação - Passo a Passo
 
