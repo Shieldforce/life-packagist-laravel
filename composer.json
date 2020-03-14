@@ -17,8 +17,8 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\Examples\\": "app/Examples/",
-            "ShieldforcePackage\\AutoValidation\\": "src/AutoValidation/"
+            "App\\": "app/",
+            "ShieldforcePackage\\": "src/"
         }
     }
 }
