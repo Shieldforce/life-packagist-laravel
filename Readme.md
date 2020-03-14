@@ -233,6 +233,54 @@
 ### ===Fim de instrução de uso do AutoValidation===
 
 
+### Segundo pacote é o ResponseView, Segue instruções de Uso
+### ===Início de instrução de uso do ResponseView===
+
+### Exemplo de Uso no Controller
+
+    use ShieldforcePackage\ResponseView\ResponseView;
+    
+    class EdicaoCursoController extends Controller
+    {
+        use ResponseView;
+        
+        /**
+         * EdicaoCursoController constructor.
+         */
+        public function __construct()
+        {
+            $this->addTitulo('title');
+            $this->addMergeData('variable gloabal', $value);
+        }
+        
+        public function index(request $request)
+        {
+            $this->addData('variable', $value);
+            $this->addTitulo('title');
+            $this->addDataArray('array', []);
+            $this->addDataSession('session', $value);
+            $this->addSubTitulo('variable', $value);
+            $this->addBreadcrumb('title', 'route.name', 'icon');
+            $this->getData();
+            return $this->view('route.name');
+        }
+        
+    }
+
+### Descrição de aplicação dos métodos:
+- $this->addData('variable', $value) - Add os valores a serem enviados para a view e também guarda na session.
+- $this->addTitulo('title') - Adiciona o título na view
+- $this->addDataArray('array', []) - Add os valores em array a serem enviados para a view
+- $this->addDataSession('session', $value) - Add os valores a serem enviados para a view e também guarda na session
+- $this->addSubTitulo('variable', $value) - Adiciona o subtítulo na view
+- $this->addBreadcrumb('title', 'route.name', 'icon') - Adiciona o breadcrumb em cada view
+- $this->getData('variable') - retorna um valor setado
+- $this->getData() - retorna todos os valores contidos
+- return $this->view('route.name') - Chamada para devolver a view ja com os arrays data e extra
+
+### ===Fim de instrução de uso do AutoValidation===
+
+
 ### Tecnologias utilizadas
 - Git (https://git-scm.com/)
 - Composer (https://getcomposer.org/download/)
