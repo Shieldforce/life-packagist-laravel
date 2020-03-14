@@ -1,6 +1,6 @@
 <?php
 
-namespace SiefPackage\AutoValidation;
+namespace ShieldforcePackage\AutoValidation;
 
 trait TraitStartValidation
 {

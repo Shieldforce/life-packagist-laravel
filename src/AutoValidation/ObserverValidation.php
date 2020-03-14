@@ -1,6 +1,6 @@
 <?php
 
-namespace SiefPackage\AutoValidation;
+namespace ShieldforcePackage\AutoValidation;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Validator;
