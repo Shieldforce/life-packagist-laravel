@@ -63,72 +63,6 @@ class ObserverValidation
      * @param Model $model
      * @return bool|void
      */
-    public function retrieved(Model $model)
-    {
-        if(isset($model::$rules['retrieved']))
-        {
-            $rules = [];
-            $validator = Validator::make($model->getAttributes(), $model::$rules['retrieved']);
-            if($validator->fails())
-            {
-                return back()
-                    ->with('error', 'Validação de Campos não passou!!')
-                    ->withErrors($validator)
-                    ->withInput()
-                    ->throwResponse();
-            }
-        }
-        return true;
-    }
-
-    /**
-     * @param Model $model
-     * @return bool|void
-     */
-    public function created(Model $model)
-    {
-        if(isset($model::$rules['created']))
-        {
-            $rules = [];
-            $validator = Validator::make($model->getAttributes(), $model::$rules['created']);
-            if($validator->fails())
-            {
-                return back()
-                    ->with('error', 'Validação de Campos não passou!!')
-                    ->withErrors($validator)
-                    ->withInput()
-                    ->throwResponse();
-            }
-        }
-        return true;
-    }
-
-    /**
-     * @param Model $model
-     * @return bool|void
-     */
-    public function updated(Model $model)
-    {
-        if(isset($model::$rules['updated']))
-        {
-            $rules = [];
-            $validator = Validator::make($model->getAttributes(), $model::$rules['updated']);
-            if($validator->fails())
-            {
-                return back()
-                    ->with('error', 'Validação de Campos não passou!!')
-                    ->withErrors($validator)
-                    ->withInput()
-                    ->throwResponse();
-            }
-        }
-        return true;
-    }
-
-    /**
-     * @param Model $model
-     * @return bool|void
-     */
     public function saving(Model $model)
     {
         if(isset($model['system']) && $model['system']==1)
@@ -143,28 +77,6 @@ class ObserverValidation
         {
             $rules = [];
             $validator = Validator::make($model->getAttributes(), $model::$rules['saving']);
-            if($validator->fails())
-            {
-                return back()
-                    ->with('error', 'Validação de Campos não passou!!')
-                    ->withErrors($validator)
-                    ->withInput()
-                    ->throwResponse();
-            }
-        }
-        return true;
-    }
-
-    /**
-     * @param Model $model
-     * @return bool|void
-     */
-    public function saved(Model $model)
-    {
-        if(isset($model::$rules['saved']))
-        {
-            $rules = [];
-            $validator = Validator::make($model->getAttributes(), $model::$rules['saved']);
             if($validator->fails())
             {
                 return back()
@@ -211,28 +123,6 @@ class ObserverValidation
      * @param Model $model
      * @return bool|void
      */
-    public function deleted(Model $model)
-    {
-        if(isset($model::$rules['deleted']))
-        {
-            $rules = [];
-            $validator = Validator::make($model->getAttributes(), $model::$rules['deleted']);
-            if($validator->fails())
-            {
-                return back()
-                    ->with('error', 'Validação de Campos não passou!!')
-                    ->withErrors($validator)
-                    ->withInput()
-                    ->throwResponse();
-            }
-        }
-        return true;
-    }
-
-    /**
-     * @param Model $model
-     * @return bool|void
-     */
     public function restoring(Model $model)
     {
         if(isset($model['system']) && $model['system']==1)
@@ -247,28 +137,6 @@ class ObserverValidation
         {
             $rules = [];
             $validator = Validator::make($model->getAttributes(), $model::$rules['restoring']);
-            if($validator->fails())
-            {
-                return back()
-                    ->with('error', 'Validação de Campos não passou!!')
-                    ->withErrors($validator)
-                    ->withInput()
-                    ->throwResponse();
-            }
-        }
-        return true;
-    }
-
-    /**
-     * @param Model $model
-     * @return bool|void
-     */
-    public function restored(Model $model)
-    {
-        if(isset($model::$rules['restored']))
-        {
-            $rules = [];
-            $validator = Validator::make($model->getAttributes(), $model::$rules['restored']);
             if($validator->fails())
             {
                 return back()

@@ -28,16 +28,10 @@ class ModelExample extends Model
      */
     public static $rules =
         [
-            'retrieved'       => [],
             'creating'        => [],
-            'created'         => [],
             'updating'        => [],
-            'updated'         => [],
             'saving'          => [],
-            'saved'           => [],
             'deleting'        => [],
-            'deleted'         => [],
             'restoring'       => [],
-            'restored'        => [],
         ];
 }
