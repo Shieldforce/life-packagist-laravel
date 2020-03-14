@@ -162,7 +162,7 @@
                 'attribute-name' => [
                     'rule-name' => 'custom-message',
                 ],
-                'edi_id' => [
+                'edi_ano' => [
                     'required'                            => 'Campo :attribute é obrigatório',
                     'integer'                             => 'Campo :attribute deve ser um inteiro',
                     'min'                                 => 'Campo :attribute deve conter a data mínima de 2000',
@@ -183,7 +183,7 @@
     
         'attributes' => [
                 'g-recaptcha-response'                 => 'reCAPTCHA',
-                'edi_id'                               => 'Identificação da Edição',
+                'edi_ano'                              => 'Ano de Início:',
             ],
     
     ];
