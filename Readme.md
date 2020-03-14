@@ -7,7 +7,7 @@
 - Rodar o comando: "composer require shieldforce/sief-packagist-laravel dev-master"
 
 ### Primeiro pacote é o AutoValidation, Segue instruções de Uso
-### ==============================Início de instrução de uso do AutoValidation===============================
+### ===Início de instrução de uso do AutoValidation===
 
 ### Exemplo de Uso no Model, com a Trait (Nesse caso a Trait Já contém o método boot o o ObserverValidation) :
 
@@ -196,7 +196,7 @@
         ->withInput()
         ->throwResponse();
         
-### ==============================Fim de instrução de uso do AutoValidation===============================
+### ===Fim de instrução de uso do AutoValidation===
 
 
 ### Tecnologias utilizadas
