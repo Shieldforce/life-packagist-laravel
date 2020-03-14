@@ -196,6 +196,28 @@
         ->withInput()
         ->throwResponse();
         
+### Tratamento na View:
+
+    {{-- Include Toast CSS and JS --}}
+    <link rel="stylesheet" href="{{ asset('build/plugins/toast/toast.css') }}">
+    <script src="{{ asset( 'build/plugins/toast/toast.js' ) }}" ></script>
+    
+    @if (count($errors) > 0)
+    	<script>
+    		$.toast( {
+    			heading   : 'Atenção ao(s) seguinte(s) erro(s):' ,
+    			text      : [
+    				@foreach ($errors->all() as $error)
+    					"{{ $error }}" ,
+    				@endforeach
+    			] ,
+    			icon      : 'error' ,
+    			hideAfter : false ,
+    			position  : 'top-right' ,
+    		} )
+    	</script>
+    @endif
+        
 ### ===Fim de instrução de uso do AutoValidation===
 
 
