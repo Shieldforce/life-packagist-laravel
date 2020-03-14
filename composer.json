@@ -1,9 +1,10 @@
 {
-    "name": "shieldforce/autovalidation-laravel",
+    "name": "shieldforce/sief-packagist-laravel",
     "description": "Validacao automatica pelo Model",
     "type": "library",
     "license": "MIT",
     "version": "1.0",
+    "keywords": ["validation", "laravel", "autoValidation", "auto validation", "request validation"],
     "minimum-stability": "dev",
     "authors": [
         {
