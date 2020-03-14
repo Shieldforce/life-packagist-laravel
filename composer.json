@@ -1,7 +1,7 @@
 {
     "name": "shieldforce/autovalidation-laravel",
     "description": "Validacao automatica pelo Model",
-    "type": "metapackage",
+    "type": "library",
     "license": "MIT",
     "version": "1.0",
     "minimum-stability": "dev",
