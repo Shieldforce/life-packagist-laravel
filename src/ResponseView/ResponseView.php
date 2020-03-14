@@ -148,4 +148,17 @@ trait ResponseView
     {
         return (empty($key) ? $this->mergeData : $this->mergeData[ $key ]);
     }
+
+    /**
+     * Add os valores em array a serem enviados para a view
+     *
+     * @param string $key
+     * @param string | array $value
+     */
+    private function addDataArray($key, $value)
+    {
+        $this->data[ trim($key) ][] = $value;
+    }
+
+
 }
