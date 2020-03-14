@@ -201,6 +201,7 @@
     {{-- Include Toast CSS and JS --}}
     <link rel="stylesheet" href="{{ asset('build/plugins/toast/toast.css') }}">
     <script src="{{ asset( 'build/plugins/toast/toast.js' ) }}" ></script>
+    <script src="{{ asset( 'js/funcoesgerais/toast.adapters.js' ) }}" ></script>
     
     @if (count($errors) > 0)
     	<script>
