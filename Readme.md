@@ -4,7 +4,7 @@
 
 - Instalar o Git (Link no rodapé).
 - Instalar o Composer (Link no rodapé).
-- Rodar o comando: "composer require shieldforce/sief-packagist-laravel dev-master"
+- Rodar o comando: "composer require shieldforce/life-packagist-laravel dev-master"
 
 ### Primeiro pacote é o AutoValidation, Segue instruções de Uso
 ### ===Início de instrução de uso do AutoValidation===
