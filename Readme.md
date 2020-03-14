@@ -285,8 +285,12 @@ Exemplo de Uso no Controller
 - $this->getData() - retorna todos os valores contidos
 - return $this->view('route.name') - Chamada para devolver a view ja com os arrays data e extra
 
-### ===Fim de instrução de uso do AutoValidation===
+> Fim de instrução de uso do AutoValidation ------------------------------------
 
+
+------------
+------------
+------------
 
 ### Tecnologias utilizadas
 - Git (https://git-scm.com/)
