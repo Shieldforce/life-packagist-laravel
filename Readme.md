@@ -10,7 +10,7 @@
 ### Primeiro pacote é o AutoValidation, Segue instruções de Uso
 ### ===Início de instrução de uso do AutoValidation===
 
-### Exemplo de Uso no Model, com a Trait (Nesse caso a Trait Já contém o método boot o o ObserverValidation) :
+### Exemplo de Uso no Model, com a Trait (Nesse caso a Trait Já contém o método boot() e o ObserverValidation) :
 
     /**
      * Start ObserverValidation
