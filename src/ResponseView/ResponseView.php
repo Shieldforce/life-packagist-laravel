@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Traits;
+namespace ShieldforcePackage\ResponseView;
 
 /**
  * @author  Guilherme Ferro
