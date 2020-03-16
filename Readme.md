@@ -295,7 +295,7 @@ Exemplo de Uso no Controller
 
 > Início de instrução de uso do SaveFilesFunctions ------------------------------------
 
-### Adicione essa linha no config/app.php ['providers'] :
+### Adicione essa linha no config/app.php ['providers'] Intervention\Image\ImageServiceProvider::class :
 
     'providers' => [
     
@@ -324,10 +324,11 @@ Exemplo de Uso no Controller
             Illuminate\Translation\TranslationServiceProvider::class,
             Illuminate\Validation\ValidationServiceProvider::class,
             Illuminate\View\ViewServiceProvider::class,
+            
             Intervention\Image\ImageServiceProvider::class
     ]
     
-### Adicione essa linha no config/app.php ['aliases'] :
+### Adicione essa linha no config/app.php ['aliases'] 'Image' => Intervention\Image\Facades\Image::class :
 
     'aliases' => [
     
@@ -366,6 +367,7 @@ Exemplo de Uso no Controller
             'View' => Illuminate\Support\Facades\View::class,
             'QrCode' => SimpleSoftwareIO\QrCode\Facades\QrCode::class,
             'PDF' => Barryvdh\DomPDF\Facade::class,
+            
             'Image' => Intervention\Image\Facades\Image::class
     ]
     
