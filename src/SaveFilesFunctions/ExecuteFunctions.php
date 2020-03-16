@@ -1,6 +1,8 @@
 <?php
 
 namespace ShieldforcePackage\SaveFilesFunctions;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 use Image;
 
 /**
@@ -64,6 +66,17 @@ trait ExecuteFunctions
         }
         else{
             return $request->$inputNamebanco;
+        }
+    }
+
+    public function saveDatabaseImage(Request $request, $fieldName, $columnDatabase, $path, $width, $height, Model $model, $idModel)
+    {
+        $filename = $this->SaveImageSigle($request, $fieldName, $path, $width, $height);
+        if($filename)
+        {
+            $file = $model::find($idModel);
+            $file->$columnDatabase = $filename;
+            $file->save();
         }
     }
 
