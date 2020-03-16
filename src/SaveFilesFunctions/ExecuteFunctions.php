@@ -16,7 +16,7 @@ trait ExecuteFunctions
      * @param $altura
      * @return bool|string
      */
-    public function SalvarImagem($request, $inputName, $caminho, $largura, $altura)
+    public function SaveImageSigle($request, $inputName, $caminho, $largura, $altura)
     {
         if($request->hasFile($inputName)){
             $arquivo = $request->file($inputName);
@@ -42,7 +42,7 @@ trait ExecuteFunctions
      * @param $altura
      * @return string
      */
-    public function EditarImagem($request, $inputName, $inputNamebanco, $caminho, $largura, $altura)
+    public function EditImageSigle($request, $inputName, $inputNamebanco, $caminho, $largura, $altura)
     {
         if($request->hasFile($inputName)){
             $arquivo = $request->file($inputName);
@@ -71,7 +71,7 @@ trait ExecuteFunctions
      * @param $caminho
      * @return bool
      */
-    public function ExcluirImagem($nome, $caminho)
+    public function DeleteImageSigle($nome, $caminho)
     {
         //Excluindo arquivo de imagem se ele existir
         if(file_exists($caminho.''.$nome) && $nome!='')
