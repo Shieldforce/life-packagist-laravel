@@ -6,7 +6,7 @@ namespace App\SaveFilesFunctions;
  * Class ExecuteFunctions
  * @package App\SaveFilesFunctions
  */
-class ExecuteFunctions
+trait ExecuteFunctions
 {
     /**
      * @param $request
