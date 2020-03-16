@@ -69,6 +69,16 @@ trait ExecuteFunctions
         }
     }
 
+    /**
+     * @param Request $request
+     * @param $fieldName
+     * @param $columnDatabase
+     * @param $path
+     * @param $width
+     * @param $height
+     * @param Model $model
+     * @param $idModel
+     */
     public function saveDatabaseImage(Request $request, $fieldName, $columnDatabase, $path, $width, $height, Model $model, $idModel)
     {
         $filename = $this->SaveImageSigle($request, $fieldName, $path, $width, $height);
