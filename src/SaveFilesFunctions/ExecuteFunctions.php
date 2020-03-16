@@ -1,6 +1,7 @@
 <?php
 
 namespace ShieldforcePackage\SaveFilesFunctions;
+use Image;
 
 /**
  * Class ExecuteFunctions
