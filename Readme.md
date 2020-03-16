@@ -374,6 +374,29 @@ Exemplo de Uso no Controller
 ### Depois rode esse comando no terminal dentro do projeto:
 
     $: php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravelRecent"
+    
+### Logo após crie a pasta que deseja salvar os arquivos e dê permissão a pasta public do seu projeto, para que consiga gravar os arquivos:
+
+    $: sudo chmod -R 755 public/
+    
+    
+### Exemplo de implementação para salvamento de imagem única:
+
+    $filename = $this->SaveImageSigle($request,'filefield','arquivos/fotos/','150','200');
+    if($filename)
+    {
+        $saveAvatar = DadosBasicosModel::find($id);
+        $saveAvatar->dba_foto = $filename;
+        $saveAvatar->save();
+    }
+   
+-----------------------------------------------------------------------------------------------------------
+>> Os parâmentros são: 
+>> - $request = É o próprio request em si.
+>> - 'filefield' = É o nome do campo do formulário.
+>> - 'arquivos/fotos/' = É o caminho que deseja salvar o arquivo (Dar permissão para salvamento na pasta!),
+>> - '150' = Largura que imagem será salva.
+>> - '200' = Altura que imagem será salva.
 
 > Fim de instrução de uso do SaveFilesFunctions ------------------------------------
 
