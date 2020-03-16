@@ -1,6 +1,6 @@
 <?php
 
-namespace App\SaveFilesFunctions;
+namespace ShieldforcePackage\ResponseView;
 
 /**
  * Class ExecuteFunctions
